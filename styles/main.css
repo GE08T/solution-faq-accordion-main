@@ -16,7 +16,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -30,12 +29,17 @@ body {
   font-size: 1rem;
 }
 
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-pink);
+}
+
 .faq-main {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: var(--light-pink);
 }
 
 .faq-background {
