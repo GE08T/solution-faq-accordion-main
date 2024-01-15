@@ -51,14 +51,34 @@ main {
 }
 
 .faq-container {
+  top: 0;
+  bottom: 0;
+  height: 33rem;
+  max-height: 33rem;
   display: flex;
   position: absolute;
   flex-direction: column;
   background-color: var(--white);
-  height: 33rem;
-  width: fit-content;
-  padding: 0;
-  margin: 0 1.5rem;
+  padding: 1.875rem 1.5rem 1.5rem 1.5rem;
+  margin: auto 1.5rem;
+  border-radius: 9px;
+  color: var(--dark-purple);
+}
+
+.faq-tittle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-star {
+  height: 2rem;
+  margin-right: 1.25rem;
+}
+
+.faq-tittle > span {
+  font-size: 2rem;
+  font-weight: var(--fw-700);
 }
 
 .container {
