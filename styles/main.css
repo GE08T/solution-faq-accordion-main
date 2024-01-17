@@ -6,9 +6,9 @@
   --dark-purple: hsl(292, 42%, 14%);
 
   /* font-weight */
-  --fw-400: 400;
-  --fw-600: 600;
-  --fw-700: 700;
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 *, 
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Work Sans';
   src: url('../assets/fonts/WorkSans-Regular.ttf') format('ttf');
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 body {
@@ -69,6 +69,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 1.75rem;
 }
 
 .icon-star {
@@ -78,7 +79,32 @@ main {
 
 .faq-tittle > span {
   font-size: 2rem;
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-semi-bold);
+}
+
+.toggle-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toggle-tittle {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: var(--fw-semi-bold);
+  max-width: 210px;
+}
+
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/images/icon-plus.svg);
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .container {
@@ -87,6 +113,11 @@ main {
   margin-right: auto;
   padding-left: auto;
   padding-right: auto;
+}
+@media (min-width: 346px) {
+  .faq-background {
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+  }  
 }
 
 /* xs */
