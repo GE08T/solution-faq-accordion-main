@@ -4,11 +4,6 @@
   --light-pink: hsl(275, 100%, 97%);
   --grayish-purple: hsl(292, 16%, 49%);
   --dark-purple: hsl(292, 42%, 14%);
-
-  /* font-weight */
-  --fw-normal: 400;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
 }
 
 *, 
@@ -19,9 +14,21 @@
 }
 
 @font-face {
-  font-family: 'Work Sans';
-  src: url('../assets/fonts/WorkSans-Regular.ttf') format('ttf');
-  /* font-weight: 400; */
+  font-family: 'Work Sans', sans-serif;
+  src:  url("../assets/fonts/WorkSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src:  url("../assets/fonts/WorkSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src:  url("../assets/fonts/WorkSans-Bold.ttf");
+  font-weight: 700;
 }
 
 body {
@@ -79,7 +86,7 @@ main {
 
 .faq-tittle > span {
   font-size: 2rem;
-  font-weight: var(--fw-semi-bold);
+  font-weight: 700;
 }
 
 .toggle-content {
@@ -91,7 +98,7 @@ main {
 .toggle-tittle {
   display: inline-block;
   font-size: 1rem;
-  font-weight: var(--fw-semi-bold);
+  font-weight: 700;
   max-width: 210px;
 }
 
